@@ -1,20 +1,16 @@
 
 def two(given_sum, input_list):
-    input_list.sort()
-    l = 0
-    r = len(input_list) - 1
-    while l < r:
-        current_sum = input_list[l] + input_list[r]
-        if current_sum == given_sum:
+    seen = []
+    for i in input_list:
+        if given_sum - i in seen:
             return "Yes"
-        elif current_sum < given_sum:
-            l += 1
-        else:
-            r -= 1
+        seen.append(i)
     return "No"
 
-sum = input("")
-str = input("")
-input_list = [int(x) for x in str.split(" ")]
+def main():
+    sumu = input()
+    stru = input()
+    input_list = [int(x) for x in stru.split()]
+    print(two(int(sumu),input_list))
 
-print(two(int(sum),input_list))
+main()

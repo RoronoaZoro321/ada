@@ -7,7 +7,11 @@ def c(l,p):
         cost = l
         return cost + min(c(p[-1],p[:-1]),c(l-p[0],p[1:]))
 
-print(c(100,[25,50,75]))
 
+def main():
+    sumu = input()
+    stru = input()
+    input_list = [int(x) for x in stru.split()]
+    print(c(int(sumu),input_list))
 
-
+main()
