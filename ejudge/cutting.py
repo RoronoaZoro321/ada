@@ -1,4 +1,3 @@
-
 def c(l,p):
     cost = 0
     if len(p) <= 0:

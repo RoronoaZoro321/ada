@@ -1,4 +1,4 @@
-
+# 2 number in list whose sum == given sum
 def two(given_sum, input_list):
     seen = []
     for i in input_list:

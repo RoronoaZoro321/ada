@@ -1,3 +1,5 @@
+# Subset Sum "True" if there is a subset of the 
+# given set S whose sum exactly equals Y
 def subset(list,sum):
     if len(list) == 0:
         return sum == 0
@@ -8,8 +10,8 @@ def subset(list,sum):
         new_list = list[:-1]
         return subset(new_list, sum) or subset(new_list, sum - list[-1])
     
-str = input("")
-sum = input("")
-input_list = [int(x) for x in str.split(" ")]
+str = input()
+sum = input()
+input_list = [int(x) for x in str.split()]
 
 print(subset(input_list, int(sum)))

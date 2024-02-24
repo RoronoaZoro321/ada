@@ -1,3 +1,4 @@
+# Booth rental that give most profit in consicutive days
 def booth(rent, profits_days):
     if len(profits_days) == 1:
         if profits_days[0] - rent > 0:

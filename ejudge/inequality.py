@@ -1,3 +1,5 @@
+# find the largest non-negative integer x x**2 + x ≤ y
+
 def func(x):
     return (x * x) + x
 
